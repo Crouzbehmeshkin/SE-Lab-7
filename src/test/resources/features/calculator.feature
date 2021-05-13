@@ -26,3 +26,15 @@ Feature: Calculator
     Given Two input values, 2 and 3, and an operation ^
     When I apply the operation
     Then I expect the result 8
+
+  Scenario Outline: do operation on two numbers
+    Given Two input values, <first> and <second>, and an operation <op>
+    When I apply the operation
+    Then I expect the result <result>
+    Examples:
+      | first | second | op | result |
+      | 6    | 2    | /  | 3     |
+      | 15   | 5    | /  | 3     |
+      | 16544| 47   | /  | 352   |
+      | 6    | 2    | ^  | 36    |
+      | 7    | 4    | ^  | 2401  |
