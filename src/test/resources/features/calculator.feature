@@ -19,10 +19,10 @@ Feature: Calculator
 
   Scenario: do division operation on two numbers
     Given Two input values, 6 and 2, and an operation /
-    When I divide the two values
+    When I apply the operation
     Then I expect the result 3
 
   Scenario: do power operation on two numbers
     Given Two input values, 2 and 3, and an operation ^
-    When I power the first value to the second value
+    When I apply the operation
     Then I expect the result 8
